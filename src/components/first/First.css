@@ -1,0 +1,489 @@
+.first_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100px;
+  margin-left: 200px;
+  display: flex;
+}
+
+.card_1 {
+  text-align: center;
+  background-color: rgb(229, 243, 255);
+  border-radius: 10px;
+  height: auto;
+  padding: 20px;
+}
+
+.card_1_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(27, 70, 108);
+  font-size: 80px;
+  font-family: "Trebuchet MS";
+  text-align: center;
+}
+
+.whitespace {
+  width: 20px;
+}
+
+.card_1_title .char {
+  opacity: 0;
+  transform: translateY(20px);
+  display: inline-block;
+  animation: letterEnter 1.5s ease forwards;
+  animation-delay: calc(var(--char-index) * 0.2s);
+}
+
+@keyframes letterEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card_1_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.text {
+  margin-top: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+.text h2 {
+  font-family: "Trebuchet MS";
+  font-weight: 500;
+  text-align: left;
+}
+
+.text h3 {
+  font-family: "Trebuchet MS";
+  font-weight: normal;
+  font-size: 30px;
+  text-align: left;
+  color: rgb(27, 70, 108);
+}
+
+.text h3 span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: rgb(27, 70, 108);
+}
+
+.explore-button {
+  font-family: "Trebuchet MS";
+  letter-spacing: 1px;
+  color: white;
+  display: flex;
+  text-align: left;
+  border-radius: 30px;
+  padding: 10px 50px 10px 30px;
+  background-color: rgb(27, 70, 108);
+}
+.text h2,
+.text h3,
+.text .explore-button {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.text h2 {
+  animation-name: dropDown_1;
+  animation-delay: 4.5s;
+}
+
+.text h3 {
+  animation-name: dropDown;
+  animation-delay: 5s;
+}
+
+.text .explore-button {
+  animation-name: dropDown;
+  animation-delay: 5.5s;
+}
+
+@keyframes dropDown_1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card_1_image {
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card_1_aside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  padding: 20px;
+  font-family: "Trebuchet MS";
+}
+
+.card_1_aside_item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  opacity: 0;
+  transform: translateX(100%);
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.card_1_aside_icon {
+  color: #fff;
+  background-color: rgb(27, 70, 108);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_1_Icons {
+  font-size: 50px;
+}
+
+.card_1_aside_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  text-align: left;
+  width: 200px;
+}
+
+.card_1_aside_text h4 {
+  color: #1b466c;
+  font-size: larger;
+  line-height: 1.2;
+  margin: 10px;
+}
+
+.card_1_aside_text p {
+  opacity: 0.6;
+  margin: 10px;
+}
+
+.card_1_aside_item:nth-child(1) {
+  animation-name: slideInFromRight;
+  animation-delay: 6s;
+}
+
+.card_1_aside_item:nth-child(2) {
+  animation-name: slideInFromRight;
+  animation-delay: 6.5s;
+}
+
+.card_1_aside_item:nth-child(3) {
+  animation-name: slideInFromRight;
+  animation-delay: 7s;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.card_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(27, 70, 108);
+  margin: 20px 30px 30px;
+  border-radius: 10px;
+  font-family: "Trebuchet MS";
+}
+
+.card_2_content_first_1 {
+  color: #fff;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.card_2_content_first {
+  color: #fff;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.card_2_content_first_1 p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.card_2_content_first p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.card_2_content {
+  color: #fff;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.card_2_content_icon {
+  color: rgb(27, 70, 108);
+  background-color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_2_Icons {
+  width: 40px;
+  height: 40px;
+}
+
+.card_2_Icons:hover {
+  width: 50px;
+  height: 50px;
+}
+
+.card_2_content p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.card_2:hover .card_2 {
+  opacity: 1;
+  transform: translateY(0) scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    justify-content: center;
+  }
+
+  .card_1 {
+    padding-bottom: 120px;
+  }
+
+  .card_1_title {
+    margin-left: 0;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .card_1_image {
+    margin: 30px 0;
+  }
+
+  .card_1_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .card_1_aside {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .card_1_aside_item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_1_aside_text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .card_2 {
+    margin: 20px;
+    margin-top: -80px;
+  }
+
+  .card_2_content_first,
+  .card_2_content {
+    width: 90%;
+  }
+
+  .card_2_content_first_1 {
+    margin-top: -40px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .logo img {
+    margin-left: 100px;
+  }
+
+  .card_1 {
+    padding-bottom: 120px;
+  }
+
+  .card_1_title {
+    font-size: 60px;
+  }
+
+  .card_1_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .card_1_image {
+    width: 100%;
+    margin: 0 0 0 40px;
+  }
+
+  .card_1_aside {
+    width: 100%;
+    margin: 0 0 0 40px;
+    padding: 0;
+  }
+
+  .card_2 {
+    margin: 40px;
+    margin-top: -80px;
+  }
+
+  .card_2_content_first,
+  .card_2_content {
+    width: 45%;
+    padding: 20px;
+  }
+
+  .card_2_content_first_1 {
+    margin-top: -60px;
+    padding: 20px;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .logo img {
+    margin-left: 200px;
+  }
+
+  .card_1 {
+    padding-bottom: 120px;
+  }
+
+  .card_1_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+  }
+
+  .text {
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 100%;
+  }
+
+  .card_1_image {
+    width: 100%;
+    margin-left: 100px;
+  }
+
+  .card_1_aside {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .card_2 {
+    margin: 40px;
+    margin-top: -80px;
+  }
+
+  .card_2_content {
+    width: 300px;
+    padding: 20px;
+  }
+
+  .card_2_content_first {
+    width: 300px;
+    margin-top: -60px;
+    padding: 20px;
+  }
+
+  .card_2_content_first_1 {
+    width: 300px;
+    margin-top: -60px;
+  }
+}

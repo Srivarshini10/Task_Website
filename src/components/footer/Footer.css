@@ -1,0 +1,116 @@
+.footer {
+  background-color: #134b5f;
+  color: #ffffff;
+  padding: 2rem;
+  font-family: "Trebuchet MS";
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer-contact-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #1d7a9c;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 0px;
+}
+
+.footer-contact-item-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contact-item-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  text-align: left;
+}
+
+.footer-contact-item-text h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 2px;
+  margin: 10px;
+}
+
+.footer-contact-item-text p {
+  line-height: 0;
+  margin: 10px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 60px;
+}
+
+.description {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  max-width: 400px;
+  line-height: 1.5;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .copyright {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .footer-logo {
+    width: 200px;
+    height: 60px;
+    margin: 1.5rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .copyright {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 3rem;
+  }
+
+  .footer-logo {
+    width: 200px;
+    height: 60px;
+    margin: 1rem 7rem 1rem 3rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .copyright {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 6rem;
+  }
+
+  .footer-logo {
+    width: 15%;
+    margin: 1rem 7rem 1rem 6rem;
+  }
+}
